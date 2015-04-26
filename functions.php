@@ -59,7 +59,12 @@ function convertArray() {
 function cleanTemp($old) {
 	$currentTime = time();
 	$handle=opendir("tmp/");
-	while (false!==($file = readdir($handle))) { 
+	if($handle == false)
+	{
+		print("Create tmp/ directory.");
+		die();
+	}
+	while (false!==($file = readdir($handle))) {
 		if ($file != "." && $file != "..") { 
 			$fileDate = filemtime($file); 
 			if(($currentTime - $fileDate) > $old) {
@@ -71,8 +76,11 @@ function cleanTemp($old) {
 
 function jsWindoPopUp($image, $width, $height) {
 	print("<script language=javascript>");
+	//print("<br><a href=# onClick='");
 	print("	window.open(\"$image\" ,\"OICImage\",\"width=$width,height=$height,menubar=0,resizable=0,scrollbars=0,status=0,titlebar=0,toolbar=0,hotkeys=0,locationbar=0\");");
+	//print("'>View Image</a><br>");
 	print("</script>");
+
 }
 
 ?>

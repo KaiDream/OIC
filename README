@@ -38,7 +38,12 @@ Install:
 History:
 	+ Added
 	! Fixed
-	? Problem/Bug	
+	? Problem/Bug
+
+ver 1.1.1
+	! $_REQUEST vars
+	! Updated for newer php Versions
+
 ver 1.0.5
 	! Problem when there was no image to convert error message.
 

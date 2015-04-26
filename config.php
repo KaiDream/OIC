@@ -20,16 +20,15 @@
 
 // Scriot Config
 $scriptFile     = "index.php"; // Name of Script File
-$scriptDIR      = "/home/httpd/vd/www.thedreaming.com/htdocs/Code/PHP/OIC"; //Script DIR
 $scriptName	= "OIC - the Online Image Converter"; // name of Script
-$scriptVER	= "ver 1.0.6"; // Script Version
+$scriptVER	= "ver 1.1.1"; // Script Version
 $scriptHome	= "http://www.thedreaming.com/"; //Script Home Page
 $tempTime	= "1800"; // Number of seconds to hold files in the temp director
 
 // HTML Tect
 $scriptTitle    = "TheDreaming.com: Online Image converter."; // Page Title
 $scriptCSS      = "/style.css"; // URL link to CSS
-$scriptIntro    = "Weclome to TheDreaming.com Online Image Converter."; // Intro text
+$scriptIntro    = "Welcome to TheDreaming.com Online Image Converter."; // Intro text
 $scriptState    = "At it's current state it will convert:"; // Can Convert Text
 $scriptGoBack   = "Go back to Main";
 
